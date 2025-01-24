@@ -30,3 +30,69 @@
 //         </>
 //     )
 // }
+
+
+export const Navilink = () => {
+    const navlink =[
+        {
+            name:"Home",
+            link:""
+        },
+        {
+            name:"About",
+            link:""
+        },
+        {
+            name:"Contact",
+            link:""
+        },
+    ]
+    return(
+        <>
+         <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">           
+            {navlink.map((value) => {
+                return(
+                    <>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#a">{value.name}</a>
+                        </li>
+                    </>
+                )
+            })}
+          </ul>
+        </div>
+        </>
+    )
+}
+
+export const HamBtn = () => {
+    return(
+        <>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+        </>
+    )
+}
+
+export const LogoBtn = () => {
+    return(
+        <>
+            <a className="navbar-brand" href="#a">
+              Treemiti Informatics
+            </a>
+        </>
+    )
+}
+
+export const StdProfileBtn = ({btnName,btnIcon}) => {
+    return(
+        <>
+            <div className="d-flex gap-2 align-items-center">{btnIcon}{btnName}</div>
+        </>
+    )
+}
+

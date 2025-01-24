@@ -1,7 +1,7 @@
-import React, { use, useState } from "react";
-import { StudentBtn } from "./buttons";
+import React, { useState } from "react";
 import { CoursesCard } from "./card";
-// import { CourseCard } from "./card.jsx";
+import { StdProfileBtn } from "./buttons";
+
 
 ;
 
@@ -12,16 +12,16 @@ export const StudentId = () => {
 
   return (
     <>
-      <div className="row">
-        <div style={{ width: "90px" }} className="col-3 --bs-aspect-ratio: 70%;">
+      <div className="row">       
+        <div className="col d-flex flex-column justify-content-center">
+          <h6 className="m-0 text-white">Welcome</h6>
+          <h2 className="m-0 text-white h3">{stdName}</h2>
+        </div>
+        <div style={{ width: "60px",cursor:"pointer" }} className="col-3 nav-link">
           <img className="img-fluid img-thumbnail rounded-circle" src={img} alt="" />
         </div>
-        <div className="col-6 d-flex flex-column justify-content-center">
-          <h6 className="m-0">Welcome</h6>
-          <h2 className="m-0">{stdName}</h2>
-        </div>
       </div>
-    </>
+    </> 
   )
 }
 // =======================================
@@ -30,7 +30,7 @@ export const StudentBar = () => {
   return (
     <>
       <div className="row">
-        <div className="col-sm">
+        <div className="col">
           <StudentId />
         </div>
       </div>
@@ -43,9 +43,11 @@ export const StudentBar = () => {
 export const DashboardCards = () => {
   return (
     <>
-      <div class="row d-flex align-items-center justify-content-center gap-3">
+      <div class="row d-flex">
         <CoursesCard />
       </div>
     </>
   );
 };
+
+

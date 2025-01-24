@@ -1,7 +1,7 @@
 
 import React from 'react';
 import SideBar from './shared/SideBar.jsx';
-import { DashboardCards, StudentBar } from './shared/DashBoardCard.jsx';
+import { DashboardCards } from './shared/DashBoardCard.jsx';
 
 
 const Dashboard = () => {
@@ -9,15 +9,12 @@ const Dashboard = () => {
         <>
             <div className="container-fluid">
                 <div className="d-flex justify-content-between">
-                    <div className="col-2">
+                    <div className="">
                         <SideBar />
                     </div>
-                    <div className="col-10 container-fluid p-3">
-                        <div className="row flex-column align-items-center justify-content-between gap-4">
-                            <div className="col ">
-                                <StudentBar />
-                            </div>
-                            <div className="col">
+                    <div className="col-10 p-3">
+                        <div className="row d-flex gap-4">
+                            <div className="col-12">
                                 <DashboardCards />
                             </div>
                         </div>

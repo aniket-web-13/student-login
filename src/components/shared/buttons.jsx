@@ -95,4 +95,3 @@ export const StdProfileBtn = ({btnName,btnIcon}) => {
         </>
     )
 }
-

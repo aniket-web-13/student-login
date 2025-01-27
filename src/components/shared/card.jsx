@@ -1,19 +1,4 @@
 
-// export const CourseCard = ({ cardtitle }) => {
-//     return (
-//         <>
-{/* <div className="col-md-4 ">
-    <div className={`card text-dark mb-3`}>
-        <div className="card-body">
-            <h5 className="card-title">{cardtitle}</h5>
-            <p className="card-text fs-3">{cardtitle}</p>
-        </div>
-    </div>
-</div> */}
-//         </>
-//     )
-// }
-
 export const CoursesCard = () => {
     const coursesInfo = [
         {
